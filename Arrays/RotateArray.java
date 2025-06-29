@@ -29,10 +29,33 @@ public class RotateArray {
         }
 
         k = k % size; // handle cases where k is greater than size
+
+        // right rotation
         reverseArray(arr, 0, size - 1); // reverse the whole array
         reverseArray(arr, 0, k - 1); // reverse first k elements
 
         reverseArray(arr, k, size - 1); // reverse the rest of the array
+
+        for (int i : arr) {
+            System.out.print(i + " ");
+        }
+
+        System.out.println();
+
+        // similarly the array can be rotated to left by reversing the last k elements
+        // left rotation
+        // first make the original array as it was before right rotation
+        // reverseArray(arr, 0, size - 1); // reverse the whole array
+
+        // reverseArray(arr, 0, k); // reverse first k elements
+
+        // reverseArray(arr, k + 1, size - 1); // reverse (size-k) elements
+
+        // for (int i : arr) {
+        // System.out.print(i + " ");
+        // }
+
+        // System.out.println();
 
     }
 
@@ -49,11 +72,7 @@ public class RotateArray {
         System.out.print("Enter the value of K: ");
         int k = sc.nextInt();
         rotateArrayByK(arr, n, k);
-        for (int i : arr) {
-            System.out.print(i + " ");
-        }
 
-        System.out.println();
         sc.close();
     }
 }
