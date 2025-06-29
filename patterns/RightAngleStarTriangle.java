@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class RightAngleTriangle {
+class RightAngleStarTriangle {
 
     void printTriangle(int n) {
         for (int i = 0; i < n; i++) {
@@ -16,7 +16,7 @@ class RightAngleTriangle {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the value of n: ");
         int n = sc.nextInt();
-        new RightAngleTriangle().printTriangle(n);
+        new RightAngleStarTriangle().printTriangle(n);
         sc.close();
     }
 }
