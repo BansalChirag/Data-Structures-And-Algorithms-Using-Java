@@ -3,14 +3,14 @@ import java.util.Scanner;
 public class reverseAlphabetTriangle {
     private static void printAlphaTriangle(int n) {
 
-        // Input Format: N = 6
+        // Input Format: N = 5
         // Result:
-        // F
-        // E F
-        // D E F
-        // C D E F
-        // B C D E F
-        // A B C D E F
+        // ABCDE
+        // ABCD
+        // ABC
+        // AB
+        // A
+
         // converting this into number format will make it easy
 
         for (int row = n; row > 0; row--) {
