@@ -7,14 +7,7 @@ public class countSubArraysSumEqualsK {
 
         int n = nums.length, sum = 0, count = 0;
 
-        // HashMap<Integer, Integer> mpp = new HashMap<>();
-        // int sum = 0, count = 0;
-        // for (int i : nums) {
-        // sum += i;
-        // if(mpp.containsKey(mpp))
-        // }
-
-        // 1st solution: Time complexity: O(n)
+        // 1st solution: Time complexity: O(n^2)
         // int count = 0;
         // for (int i = 0; i < n; i++) {
         // sum = 0;
