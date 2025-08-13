@@ -45,15 +45,13 @@ public class lowerBound {
                 .mapToInt(Integer::parseInt)
                 .toArray();
 
-        System.out.print("Enter the element you need to find : ");
+        System.out.print("Enter the element to find its lower bound : ");
         int ele = sc.nextInt();
 
         int ans = findLowerBound(arr, ele);
-        if (ans == -1) {
-            System.out.println("Element does not exist");
-        } else {
-            System.out.println("Element exist at : " + ans);
-        }
+
+        System.out.println("Lower bound of the elemenet is : " + ans);
+
         sc.close();
     }
 }

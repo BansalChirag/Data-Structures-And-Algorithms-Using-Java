@@ -46,15 +46,13 @@ public class upperBound {
                 .mapToInt(Integer::parseInt)
                 .toArray();
 
-        System.out.print("Enter the element you need to find : ");
+        System.out.print("Enter the element to find its upper bound : ");
         int ele = sc.nextInt();
 
         int ans = findUpperBound(arr, ele);
-        if (ans == -1) {
-            System.out.println("Element does not exist");
-        } else {
-            System.out.println("Element exist at : " + ans);
-        }
+
+        System.out.println("Upper bound of the elemenet is : " + ans);
+
         sc.close();
     }
 }
