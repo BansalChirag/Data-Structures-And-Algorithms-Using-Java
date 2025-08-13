@@ -6,17 +6,18 @@ public class lowerBound {
     /**
      * The function `findLowerBound` returns the index of the first element in a
      * sorted array that is
-     * greater than or equal to a given value.
+     * greater than or equal to a given value x.
      * 
-     * @param arr An array of integers in which the lower bound needs to be found.
+     * @param arr The `arr` parameter is an integer array that is sorted in
+     *            non-decreasing order.
      * @param x   X is the target value that we want to find the lower bound for in
      *            the given sorted
-     *            array. The function `findLowerBound` will return the index of the
-     *            first element in the array that
-     *            is greater than or equal to the target value x.
+     *            array. The function `findLowerBound` uses binary search to find
+     *            the index of the first element
+     *            in the array that is greater than or equal to the target value x.
      * @return The `findLowerBound` method returns the index of the first element in
-     *         the given array
-     *         `arr` that is greater than or equal to the target value `x`.
+     *         the array `arr`
+     *         that is greater than or equal to the value `x`.
      */
     private static int findLowerBound(int arr[], int x) {
         int start = 0, n = arr.length, end = n - 1, ans = n;
