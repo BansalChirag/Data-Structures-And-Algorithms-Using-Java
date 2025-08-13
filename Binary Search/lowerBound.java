@@ -19,7 +19,7 @@ public class lowerBound {
      *         the array `arr`
      *         that is greater than or equal to the value `x`.
      */
-    private static int findLowerBound(int arr[], int x) {
+    public static int findLowerBound(int arr[], int x) {
         int start = 0, n = arr.length, end = n - 1, ans = n;
         while (start <= end) {
             int mid = start + (end - start) / 2;
